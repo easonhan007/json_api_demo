@@ -50,7 +50,8 @@ func main() {
 	router.POST("/api/v1/albums", postAlbums)
 	router.DELETE("/api/v1/albums/:id", removeAlbumByID)
 
-	router.Run("localhost:8080")
+	// router.Run("localhost:8080")
+	router.Run(":8080")
 }
 
 // getAlbums responds with the list of all albums as JSON.
